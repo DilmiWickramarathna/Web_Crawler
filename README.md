@@ -4,10 +4,10 @@ This project is a C++ multithreaded web crawler that fetches web pages, extracts
 ## Input
 The crawler requires two inputs from the user:
 - Start URL → The first website the crawler visits.
-- Number of Threads → How many concurrent threads should be used for crawling.
-Example Input: 
-Enter the start URL: https://example.com
-Enter the number of threads: 5
+- Number of Threads → How many concurrent threads should be used for crawling. <br>
+Example Input: <br>
+Enter the start URL: https://example.com <br>
+Enter the number of threads: 5 <br>
 
 ## Output
 Prints the URLs of crawled web pages.
