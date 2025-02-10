@@ -1,9 +1,20 @@
 # Web_Crawler
-A Web Crawler fetches and parses web pages to extract useful data. A multithreaded crawler improves efficiency by making concurrent requests to multiple websites.
+This project is a C++ multithreaded web crawler that fetches web pages, extracts links, and crawls them using multiple threads for efficiency. It utilizes libcurl for HTTP requests, regex for parsing links, and std::thread for concurrent execution.
 
-## Tech Stack
-- C++11 or later (for modern threading)
-- cURL (for making HTTP requests)
-- Regex or BeautifulSoup (C++ library) (for HTML parsing)
-- SQLite (optional, for storing crawled data)
-- Boost.Asio (for asynchronous networking, optional)
+## Input
+The crawler requires two inputs from the user:
+- Start URL → The first website the crawler visits.
+- Number of Threads → How many concurrent threads should be used for crawling.
+Ex: 
+Enter the start URL: https://example.com
+Enter the number of threads: 5
+
+## Output
+Prints the URLs of crawled web pages.
+
+Ex: 
+Crawled: https://example.com
+Crawled: https://example.com/about
+Crawled: https://example.com/contact
+Crawled: https://example.com/blog
+Crawled: https://example.com/services
